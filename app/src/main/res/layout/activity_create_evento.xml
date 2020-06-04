@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/blackboard_wallpaper">
+    <!-- Here you put the rest of your current view-->
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".CreateEventoActivity">
+
+        <TextView
+            android:id="@+id/titulo_general_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="50dp"
+            android:fontFamily="@font/orange_juice"
+            android:text="Crea tu evento"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="45sp">
+
+        </TextView>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/titulo_principal_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/orange_juice"
+                android:text="Título Principal"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="25sp"></TextView>
+
+            <EditText
+                android:id="@+id/titulo_principal_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:layout_marginRight="35dp"
+                android:layout_marginBottom="35dp"
+                android:configChanges="orientation|keyboardHidden"
+                android:hint="Ej. Conocimiento del medio"
+                android:inputType="textCapWords"
+                android:maxLines="1"
+                android:textColor="@color/white"
+                android:textColorHint="#F8F8FF"></EditText>
+
+
+            <TextView
+                android:id="@+id/titulo_secundario_text_view"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/orange_juice"
+                android:text="Título Secundario"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="25sp"></TextView>
+
+            <EditText
+                android:id="@+id/titulo_secundario_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:layout_marginRight="35dp"
+                android:layout_marginBottom="35dp"
+                android:configChanges="orientation|keyboardHidden"
+                android:hint="Ej. Examen Tema 1"
+                android:inputType="textCapWords"
+                android:maxLines="1"
+                android:textColor="@color/white"
+                android:textColorHint="#F8F8FF"></EditText>
+
+
+            <TextView
+                android:id="@+id/descripcion_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/orange_juice"
+                android:text="Descripción"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="25sp"></TextView>
+
+            <EditText
+                android:id="@+id/descripcion_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:layout_marginRight="35dp"
+                android:layout_marginBottom="35dp"
+                android:configChanges="orientation|keyboardHidden"
+                android:gravity="top"
+                android:hint="Ej. Entran desde la página 12 hasta la 35."
+                android:inputType="text|textMultiLine"
+                android:maxLength="140"
+                android:textColor="@color/white"
+                android:textColorHint="#F8F8FF"></EditText>
+
+            <TextView
+                android:id="@+id/fecha_titulo_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/orange_juice"
+                android:text="Fecha del evento"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="25sp"></TextView>
+
+            <TextView
+                android:id="@+id/fecha_usuario_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/orange_juice"
+                android:hint="DD-MM-YY"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="20sp"></TextView>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/add_fecha_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="35dp"
+                    android:layout_marginBottom="35dp"
+                    android:text="Modificar fecha" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="25dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/cancel_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_weight="0.5"
+                    android:text="cancelar nota" />
+
+                <Button
+                    android:id="@+id/add_nota_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_weight="0.5"
+                    android:text="añadir nota" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
+
+
